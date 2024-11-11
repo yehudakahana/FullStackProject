@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 // הגדרת ממשק User
-interface IUser extends Document {
+export interface IUser extends Document {
   username: string;
   password: string;
   isAdmin: boolean;

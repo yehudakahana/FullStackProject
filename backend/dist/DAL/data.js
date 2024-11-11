@@ -15,7 +15,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield mongoose_1.default.connect(process.env.MONGO_URI || 'mongodb://localhost/election-app');
+        const MONGO_URI = process.env.MONGO_URI;
+        if (!MONGO_URI) {
+            throw new Error("Can't connect to DB");
+        }
+        yield mongoose_1.default.connect(MONGO_URI);
         console.log('Connected to MongoDB');
     }
     catch (err) {

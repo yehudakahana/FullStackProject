@@ -2,7 +2,8 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import router from './routes/routes';  
+import  authRoutes from './routes/authRouter';  
+import candidateRoutes from './routes/candidateRouter'  
 import  connectDB  from './DAL/data';
 
 dotenv.config();  
@@ -19,7 +20,8 @@ connectDB();
 
 
 // חיבור לראוטים
-app.use('/api', router);
+app.use('/api', authRoutes);  
+app.use('/api', candidateRoutes); 
 
 
 

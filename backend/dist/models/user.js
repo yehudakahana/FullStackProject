@@ -42,6 +42,11 @@ const userSchema = new mongoose_1.Schema({
         type: Boolean,
         default: false,
     },
+    voteFor: {
+        type: mongoose_1.Schema.Types.ObjectId,
+        ref: 'Candidate',
+        default: null,
+    },
 });
 const User = mongoose_1.default.model('User', userSchema);
 exports.default = User;

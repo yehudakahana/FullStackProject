@@ -1,0 +1,38 @@
+[
+    {
+      "name": "First Floor",
+      "soldiers": 12,
+      "purpose": "GYM",
+      "description": "This floor is dedicated for workout, every person can come and work out, the GYM is open for everyone",
+      "activity": "work out"
+    },
+    {
+      "name": "Second Floor",
+      "soldiers": 8,
+      "purpose": "Dining Room",
+      "description": "The dining room where soldiers gather to eat and socialize. This space has a kitchen and a dining area with enough seating for the building’s personnel.",
+      "activity": "eat and socialize"
+    },
+    {
+      "name": "Third Floor",
+      "soldiers": 15,
+      "purpose": "Classroom",
+      "description": "The classroom where soldiers receive training. Equipped with desks, chairs, and digital screens for presentations and instructional videos.",
+      "activity": "review documents"
+    },
+    {
+      "name": "Fourth Floor",
+      "soldiers": 10,
+      "purpose": "Programming Floor",
+      "description": "The programming floor where full stack developers work on various military projects. This floor is equipped with computers and network infrastructure for coding and testing.",
+      "activity": "develop software"
+    },
+    {
+      "name": "Fifth Floor",
+      "soldiers": 3,
+      "purpose": "Commander Room",
+      "description": "The commander's office where disciplinary actions are conducted. Soldiers who require reprimanding are brought here to discuss corrective measures.",
+      "activity": "conduct meetings"
+    }
+  ]
+  

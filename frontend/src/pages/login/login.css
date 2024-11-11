@@ -1,0 +1,74 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eef0e5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #848ee5;
+  margin-bottom: 20px;
+  padding-bottom: 100px;
+}
+
+/* הגדרת הסגנון של שדות הטופס */
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* הצגת הודעות שגיאה */
+p {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* עיצוב הלינק של ההרשמה */
+.link-container {
+  margin-top: 20px;
+}
+
+a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

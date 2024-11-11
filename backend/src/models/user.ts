@@ -6,6 +6,8 @@ interface IUser extends Document {
   password: string;
   isAdmin: boolean;
   hasVoted: boolean;
+  voteFor: mongoose.Types.ObjectId | null;
+  
 }
 
 const userSchema = new Schema<IUser>({
@@ -25,6 +27,11 @@ const userSchema = new Schema<IUser>({
   hasVoted: {
     type: Boolean,
     default: false,  
+  },
+  voteFor: {
+    type: Schema.Types.ObjectId,
+    ref: 'Candidate',
+    default: null,  
   },
 });
 

@@ -4,6 +4,7 @@ import Signup from "./pages/signup/Signup";
 import PrivateRoute from "./utils/PrivateRoute";
 // import Layout from "./components/Layout/Layout";
 import { Route, Routes } from "react-router-dom";
+import Candidates from "./pages/candidates/Candidates";
 
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
     <>
        <Routes>
       { <Route path='/' element={<Login/>} /> } 
-      { <Route path='/signup' element={<Signup/>} /> }    
+      { <Route path='/signup' element={<Signup/>} /> } 
+      { <Route path='/candidates' element={<Candidates/>} /> } 
+
+
    
 
       {/* <Layout children={ */}

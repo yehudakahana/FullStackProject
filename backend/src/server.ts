@@ -10,7 +10,7 @@ dotenv.config();
 
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
@@ -23,10 +23,10 @@ connectDB();
 // חיבור לראוטים
 app.use('/api', authRoutes);  
 
-app.use('/api', verifyToken); 
-
 app.use('/api', candidateRoutes); 
 
+//@ts-ignore
+app.use('/api', verifyToken); 
 
 // הפעלת השרת
 app.listen(port, () => {

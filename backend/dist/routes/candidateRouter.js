@@ -8,4 +8,5 @@ const candidatesController_1 = require("../controllers/candidatesController");
 const router = express_1.default.Router();
 // ראוט לקבלת מועמדים
 router.get('/candidates', candidatesController_1.getCandidates);
+router.put('/candidates/vote', candidatesController_1.vote);
 exports.default = router;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUser , resetStatus, registerUser} from "../../store/userSlice"; 
+import {   resetStatus, registerUser} from "../../store/userSlice"; 
 import { RootState } from "../../store/store"; 
 import { Link } from "react-router-dom";
 import "./Signup.css";
